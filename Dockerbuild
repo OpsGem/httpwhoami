@@ -1,5 +1,7 @@
 ---
 image:  "ascend6/httpenv"
+server: "docker.opsgem.cloud"
+creds:  "ascend6-docker-opsgem"
 
 branches:
   master:
@@ -7,8 +9,10 @@ branches:
    server: "docker.io"
    creds:  "ascend6-docker-io"
 
-  dev:
-    tag:    "dev"
-    server: "docker.opsgem.cloud"
-    creds:  "ascend6-docker-opsgem"
+  staging:
+    tag:    "staging"
+
+  rc*:
+    # all RC branches will be built using defaults but tag will be the branch.
+    tag: "{{.branch}}" 
 
