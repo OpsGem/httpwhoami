@@ -1,8 +1,10 @@
 ---
-image:  "ascend6/httpenv"
-server: "docker.opsgem.cloud"
-creds:  "ascend6-docker-opsgem"
+dockerfile: "Dockerfile"            # Default but can be changed, even per branch.
+image:      "ascend6/httpenv"
+server:     "docker.opsgem.cloud"
+creds:      "ascend6-docker-opsgem"
 
+# Per Branch configuration / overrides.
 branches:
   master:
    tag:    "latest"
