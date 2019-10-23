@@ -1,7 +1,7 @@
 ---
 images:
-- image:      "ascend6/httpenv2"       # required
-  buildroot:  "."              # default: .
+- image:      "ascend6/whoami"         # required
+  buildroot:  "."                      # default: .
   dockerfile: "Dockerfile"             # default: Dockerfile
   server:     "docker.demo.opsgem.net" # default: docker.io
   creds:      "ascend6-docker-opsgem"  # optional ?
