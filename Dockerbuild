@@ -1,0 +1,14 @@
+---
+image:  "ascend6/httpenv"
+
+branches:
+  master:
+   tag:    "latest"
+   server: "docker.io"
+   creds:  "ascend6-docker-io"
+
+  dev:
+    tag:    "dev"
+    server: "docker.opsgem.cloud"
+    creds:  "ascend6-docker-opsgem"
+
