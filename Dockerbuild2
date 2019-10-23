@@ -1,4 +1,5 @@
 ---
+images:
 - image:      "ascend6/httpenv2"       # required
   buildroot:  "httpenv2/"              # default: .
   dockerfile: "Dockerfile"             # default
