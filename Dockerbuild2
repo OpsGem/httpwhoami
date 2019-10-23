@@ -1,0 +1,23 @@
+---
+- image:      "ascend6/httpenv2"       # required
+  buildroot:  "httpenv2/"              # default: /
+  dockerfile: "Dockerfile"             # default
+  server:     "docker.io"              # default
+  creds:      "ascend6-docker-opsgem"  # optional ?
+  tag:        "latest"                 # default
+  # branches  # When branches are left out only master is built.
+- image:      "ascend6/httpenv"
+  buildroot:  "."
+  dockerfile: "Dockerfile"
+  server:     "docker.opsgem.cloud"
+  creds:      "ascend6-docker-opsgem"
+  branches:
+    master:
+     tag:    "latest"
+     server: "docker.io"
+     creds:  "ascend6-docker-io"
+    staging:
+      tag:    "staging"
+    rc*:
+      tag: "{{.branch}}" 
+
