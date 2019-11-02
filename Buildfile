@@ -1,4 +1,4 @@
 ---
 stages:
   - name: Build
-    image: forseti-go:latest
+    image: ascend6/forseti-go:latest
