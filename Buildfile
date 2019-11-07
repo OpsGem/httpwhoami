@@ -8,6 +8,7 @@ stages:
       - commands:
         - ["env"]
         - ["pwd"]
-        - ["ls"]
+        - ["find", "/app"]
+        - ["df"]
   - name: Build
     image: ascend6/forseti-go:latest
