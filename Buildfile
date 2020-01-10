@@ -1,4 +1,6 @@
 ---
+volumes:
+  - "/tmp/go:/go"
 environment:
   app: "http-whoami"
 stages:
